@@ -4,21 +4,22 @@
  */
 
 define(function (require) {
+    'use strict';
     var console;
 
 
-    function returnArg () {
+    function returnArg (arg) {
         return arg;
-    };
+    }
 
     // 转接 console 对象
     console = console || {
         log: returnArg,
         warn: returnArg,
         info: returnArg,
-        time: returnArg(new Date),
+        time: returnArg( new Date() ),
         assert: function (a, b, m) {
-            return this.log(m || a + ' === ' + b + 'is :' a === b);
+            return this.log( m || a + ' === ' + b + 'is :' + a === b);
         }
     };
 
@@ -29,9 +30,9 @@ define(function (require) {
 
     function PlateParser (title, name) {
         this.name = name || '';
-        this.header = '<div class="plate-hd">\
-            <strong class="plate-title">{{title}}</strong>
-        </div>'
+        this.header = '<div class="plate-hd">' +
+            '<strong class="plate-title">{{title}}</strong>' +
+        '</div>';
     }
     PlateParser.prototype.header = function(html) {
         return html? this.header = html : this.header;
@@ -46,7 +47,7 @@ define(function (require) {
 
     function alert () {
         if (arguments.length) {
-            PlateParser()
+            new PlateParser();
         }
     }
 });
