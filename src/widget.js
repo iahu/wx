@@ -25,13 +25,12 @@ var Widget = (function() {
      * @constructor
      */
     var EMPTY_FN = function () {},
-        TOSTRING = Object.prototype.toString;
-    function isFunction (f) {
+        TOSTRING = Object.prototype.toString; function isFunction (f) {
         return typeof f === 'function';
     }
 
-    function isArray (a) {
-        return a.isArray || TOSTRING.call(a) == '[object Array]';
+    function ltrim (s) {
+        return s.replace(/^\s+/, '');
     }
 
     function isObject (o) {
@@ -40,9 +39,9 @@ var Widget = (function() {
 
     function extend () {
         var args = Array.prototype.slice.call(arguments),
-            targetObj, arg, i = 0, arr, j = 0, obj, item, k;
+            targetObj, arg, i = 0, obj;
 
-        if ( !args.length) {return null};
+        if ( !args.length) {return null;}
 
         if (args.length == 1) {
             return args[0];
@@ -51,54 +50,36 @@ var Widget = (function() {
             targetObj = args.shift();
         }
 
-        while (arg = args[i]) {
+        while ( (arg = args[i]) ) {
             i += 1;
 
             if ( !isObject(arg) ) {
-                throw 'arguments must be [object Object]';
-                return null;
-            };
-
-            for (item in arg) {
-                
-                if ( isArray( arg[item] ) ) {
-                    obj = targetObj[item];
-                    while (k = arg[item][j]) {
-                        j += 1;
-                        if ( isArray(k) ) {
-                            extend(obj, k);
-                        };
-                    };
-                    console.log(obj, arg[item]);
-                    targetObj[item] = obj.concat( arg[item] );
-
-                } else if ( isObject( arg[item] ) ) {
-                    obj = arg[item];
-                    for (k in obj ) {
-                        if (obj.hasOwnProperty(prop)) {
-                            extend( targetObj[prop], prop );
-                        };
-
-                        targetObj[prop] = arg[prop];
-                    }
-                }
+                throw new Error('arguments must be [object Object]');
             }
-        };
+
+            for (obj in arg) {
+                if (targetObj[obj] === arg[obj]) {
+                    continue;
+                }
+                targetObj[obj] = arg[obj];
+            }
+        }
 
         return targetObj;
     }
 
     function createElement (n, a, c) {
-        var node, k, 
+        var node, k,
         mHtmlAttr = {
             'class': 'className',
             'for': 'htmlFor'
         };
-        if (!n) {return null};
+        if (!n) {return null;}
         
         node = document.createElement(n);
 
-        a.innerHTML = c;
+        node.innerHTML = c;
+
         for (k in a) {
             if (a.hasOwnProperty(k)) {
                 node[ mHtmlAttr[k] || k ] = a[k];
@@ -124,19 +105,18 @@ var Widget = (function() {
             bindNode: '',
             boxNodeName: 'div',
             id: 'ui-widget-' + (uid + 1),
-            className: ['ui-widget'],
+            className: 'ui-widget',
             attrs: {},
             desc: '',
             content: '',
             visible: true,
             beforeRender : EMPTY_FN,
             afterRender: EMPTY_FN
-        }
+        };
 
         // 合并 opts 和 options 属性
         extend(opts, options);
-
-console.log(opts);
+        opts.className += ' ui-widget';
 
         widget.init(opts);
     }
@@ -144,20 +124,18 @@ console.log(opts);
     Widget.prototype.init = function(options) {
         var w = this, opts = options, i = 0, para, paraNames, wa;
         w.NAME = 'widget';
-
-        paraNames = ['id', 'className', 'bindNode', 'boxNodeName', 
+        paraNames = ['id', 'className', 'bindNode', 'boxNodeName',
             'beforeRender', 'afterRender', 'parentNode', 'content', 'attrs'];
 
-        while (para = paraNames[i]) {
+        while ( (para = paraNames[i]) ) {
             w[para] = opts[para];
             i += 1;
-        };
+        }
 
+        w.content = opts.content;
         wa = w.attrs;
         wa.id = w.id;
-        wa.className ? 
-            wa.className.concat(w.className) :
-            wa.className = w.className;
+        wa.className = ltrim( (wa.className || '' ) + ' ' + w.className);
     };
 
 
@@ -165,39 +143,45 @@ console.log(opts);
         var widget = this;
         if ( !(parentNode && parentNode instanceof Element) ) {
             parentNode = widget.parentNode || document.body;
-        };
+        }
         widget.parentNode = parentNode;
 
-        if ( isFunction(widget.beforeRender) 
-            && widget.beforeRender() === false ) {
+        if ( isFunction(widget.beforeRender) &&
+            widget.beforeRender() === false ) {
             return false;
-        };
+        }
 
         widget._renderUI();
         widget.renderUI();
 
         if ( isFunction(widget.afterRender) && widget.afterRender() === false ) {
             return false;
-        };
+        }
 
         widget._bindUI();
         widget.bindUI();
 
         widget.rendered = true;
-    }
+    };
 
     Widget.prototype.renderUI = EMPTY_FN;
     Widget.prototype.bindUI = EMPTY_FN;
     
     Widget.prototype._renderUI = function() {
         var widget = this;
-        if (widget.rendered) {return};
-        widget.el = createElement(widget.boxNodeName, widget.attrs, 
+        if (widget.rendered) {return;}
+        widget.el = createElement(widget.boxNodeName, widget.attrs,
                         widget.content);
         widget.parentNode.appendChild(widget.el);
     };
     Widget.prototype._bindUI = function (events) {
-        
+        var event, type, handle;
+        for ( event in events ) {
+            if (event.hasOwnProperty(event)) {
+                type = event.type;
+                handle = event.handle;
+            }
+        }
     };
     Widget.prototype.show = function() {
         
@@ -207,7 +191,9 @@ console.log(opts);
     };
 
     Widget.prototype.destroy = function(all) {
-        
+        if (all) {
+            //
+        }
     };
 
     return Widget;
