@@ -1,0 +1,60 @@
+/*
+ * 按钮样式
+ * .btn 可独立使用于 <a>  <button> 等元素上
+ * 所有属性应明确设置，确保不受其它样式的干扰
+ * 如有需要背景采用图片
+ * 
+ * 可根据需要扩展颜色与尺寸
+ * 扩展 .btn 的时候也应该考虑它的几种状态
+ */
+.btn {
+    /*基本样式*/
+    font: normal 12px/1.2 arial, sans-serif, '宋体', '华文宋体';
+    color:#333;
+    background: #e3e3e3;
+    border: 1px solid #A0A0A0;
+    text-decoration: none;
+
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    /* ie6 hack*/
+    *display: inline;*zoom: 1;
+
+    /*防止换行断开*/
+    -ms-word-break: keep-all;
+    word-break: keep-all; 
+    white-space: nowrap; 
+
+    /*尺寸设置*/
+    margin: 0 3px;
+    padding:1px 6px;
+    -webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;
+}
+
+/**
+ * .btn 的状态属性 
+ */
+.btn:hover,
+.btn-hover,
+.btn:focus {
+    color: #666;
+    border-color: #888;
+    background-color: #eee;
+}
+
+.btn:active,
+.btn-active {
+    color: #000;
+    background-color: #d2d2d2;
+}
+
+.btn:disabled,
+.btn-disabled,
+.btn-disabled:hover,
+.btn-disabled:focus {
+    color: #999;
+    border-color: #aaa;
+    background-color: #eee;
+    cursor: default;
+}

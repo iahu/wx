@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test pagination</title>
+    <link rel="stylesheet" href="pagination.css">
+</head>
+<body>
+    <div class="pagination cm-p" data-role="pager" data-max="20">
+        <ul role="group">
+            <li><a href="#first-page" class="btn first-page" role="button" data-num="first">首页</a></li>
+            <li><a href="#prev-page" class="btn prev-page" role="button" data-num="prev">上一页</a></li>
+            <li><a href="#" class="btn page-btn first-page active" role="button" data-num="1">1</a></li>
+            <li><a href="#" class="btn page-btn" role="button" data-num="2">2</a></li>
+            <li><a href="#" class="btn page-btn" role="button" data-num="3">3</a></li>
+            <li><a href="#" class="btn page-btn" role="button" data-num="4">4</a></li>
+            <li><a href="#" class="btn page-btn" role="button" data-num="5">5</a></li>
+            <li><a href="#next-page" class="btn next-page" role="button" data-num="next">下一页</a></li>
+            <li><a href="#last-page" class="btn last-page" role="button" data-num="last">尾页</a></li>
+            <li>
+                <div action="#" class="page-go-form">
+                    共 <span class="page-total">100</span> 页, 第
+                    <input type="text" class="page-go-num">
+                    <a href="javascript:;" class="btn-go">跳转</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

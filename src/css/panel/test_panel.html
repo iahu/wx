@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>test panel</title>
+<link rel="stylesheet" href="panel.css">
+<style>
+    body {padding: 0;margin: 0;}
+    #about {position: absolute;left: 0;top: 0;width: 20em;padding: 0 12px;background-color: #ffe;height: 100%;border-right: 1px solid #eea;}
+    #about .about-des {margin-bottom: 50px;color: #37A4A8;}
+    #about h2, #demo h2 {color:#399;}
+    #demo {position: relative;margin-left: 24em;padding: 0 40px 0 12px;}
+    code {border: 1px solid #ccc;display: inline-block;*display: inline;*zoom: 1;padding: 0 4px;background-color: #fefefe;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;color: #555;}
+    pre.code {border: 1px solid #ccc;padding: 10px;background-color: #fff;overflow: hidden;_overflow: auto;}
+    pre.code:hover {overflow: auto;}
+</style>
+</html>
+<body>
+    <div id="about">
+        <h2>说明</h2>
+        <div class="about-des">
+            <p><code>.panel</code> 是一个内容展示框</p>
+            <p>
+                要添加其它样式请在<code>div.panel</code>上添加一个ID或class来控制
+                <code>.panel-footer</code> 可选
+            </p>
+        </div>
+
+
+        html 片段：
+<pre class="code">
+&lt;div class="panel my-panel" role="widget"&gt;
+    &lt;div class="panel-head"&gt;
+        &lt;h5 class="panel-title" role="heading"&gt;
+            panel header
+        &lt;/h5&gt;
+        &lt;a href="#more" class="more" title="更多" arial-label="更多"&gt;more&lt;/a&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="panel-body"&gt;
+        panel body
+    &lt;/div&gt;
+
+    &lt;!-- 可选的footer --&gt;
+    &lt;div class="panel-footer"&gt;
+        panel footer
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+
+
+    <div id="demo">
+        <h2>DEMO</h2>
+
+        <div class="panel panel-flow" role="widget">
+            <div class="panel-head">
+                <h5 class="panel-title" role="heading">
+                    panel header
+                </h5>
+                <span class="panel-toolbar">
+                    <a href="#more" class="panel-tb panel-tb-more" title="更多" arial-label="更多">more</a>
+                    <a href="#option" class="panel-tb panel-tb-option" title="设置" arial-label="设置">设置</a>
+                    <span class="panel-tb panel-tb-mini" title="最小化" arial-label="最小化">&minus;</span>
+                    <span class="panel-tb panel-tb-max" title="最大化" arial-label="最大化">□</span>
+                    <span class="panel-tb panel-tb-closer" title="关闭" arial-label="关闭">&times;</span>
+                </span>
+            </div>
+            
+            <div class="panel-body">
+                <div class="panel-content">
+                    <ul>
+                        <li>worn1mcds9uvbhn5r23459r0fjmkdvnsaoru98wur</li>
+                        <li>worn1mcds9uvbhn5r23459r0fjmkdvnsaoru98wur</li>
+                        <li>worn1mcds9uvbhn5r23459r0fjmkdvnsaoru98wur</li>
+                        <li>worn1mcds9uvbhn5r23459r0fjmkdvnsaoru98wur</li>
+                        <li>worn1mcds9uvbhn5r23459r0fjmkdvnsaoru98wur</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

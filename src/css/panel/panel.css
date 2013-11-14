@@ -1,0 +1,56 @@
+/*panel.css*/
+
+.panel {
+    border: 1px solid #C5C5C5;
+}
+.panel .panel-head {
+    padding: 4px 12px;
+    border-bottom: 1px solid #C5C5C5;
+    background: #FAFAFA;
+    background-image: -webkit-linear-gradient(top, hsla(0,0%,100%,.1) 20%, hsla(0,0%,60%,.1) 100%);
+    background-image:    -moz-linear-gradient(top, hsla(0,0%,100%,.1) 20%, hsla(0,0%,60%,.1) 100%);
+    background-image:     -ms-linear-gradient(top, hsla(0,0%,100%,.1) 20%, hsla(0,0%,60%,.1) 100%);
+    background-image:      -o-linear-gradient(top, hsla(0,0%,100%,.1) 20%, hsla(0,0%,60%,.1) 100%);
+    background-image:         linear-gradient(top, hsla(0,0%,100%,.1) 20%, hsla(0,0%,60%,.1) 100%);
+
+    overflow: hidden;
+    *zoom: 1;
+}
+.panel .panel-head .panel-title {
+    float: left;
+    color:#666;
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+}
+.panel .panel-head .panel-toolbar {
+    float: right;
+    line-height: 1.5;
+}
+
+.panel .panel-content {
+    padding: 12px;
+}
+
+.panel .panel-footer {
+    padding: 3px 12px;
+    background-color: #FAFAFA;
+    border-top: 1px solid #C5C5C5
+}
+
+/* toolbars */
+.panel .panel-head .panel-toolbar .panel-tb-option,
+.panel .panel-head .panel-toolbar .panel-tb-more {
+    text-decoration: none;
+    color: #09f;
+    font-size: 12px;
+}
+.panel .panel-toolbar .panel-tb-more,
+.panel .panel-toolbar .panel-tb-mini,
+.panel .panel-toolbar .panel-tb-max,
+.panel .panel-toolbar .panel-tb-option,
+.panel .panel-toolbar .panel-tb-closer {
+    font: normal normal normal 20px/1 arial,'宋体';
+    cursor: pointer;
+    color: #666;
+}

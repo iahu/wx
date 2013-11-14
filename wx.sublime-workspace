@@ -1,0 +1,665 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"com",
+				"compressor"
+			],
+			[
+				"def",
+				"definNS"
+			],
+			[
+				"expor",
+				"exportPath_"
+			],
+			[
+				"optJ",
+				"opt_object"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"ov",
+				"fileOverview	@fileOverview"
+			],
+			[
+				"wh",
+				"wh	while"
+			],
+			[
+				"w",
+				"wh	while"
+			],
+			[
+				"pro",
+				"proto	Prototype"
+			],
+			[
+				"cont",
+				"continue"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"url",
+				"url()"
+			],
+			[
+				"max",
+				"maxlength	Attr"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"comm",
+				"community"
+			],
+			[
+				"_m",
+				"_marginTop"
+			],
+			[
+				"win",
+				"window"
+			],
+			[
+				"B",
+				"BindAsEventListener"
+			],
+			[
+				"_F",
+				"_fM"
+			],
+			[
+				"tis",
+				"this"
+			],
+			[
+				"_f",
+				"_fS"
+			],
+			[
+				"moves",
+				"moveStop"
+			],
+			[
+				"samp",
+				"sampleDrag"
+			],
+			[
+				"moveS",
+				"moveStart"
+			],
+			[
+				"removeEve",
+				"removeEventHandler"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"mos",
+				"moveStop"
+			],
+			[
+				"opt",
+				"options"
+			],
+			[
+				"BindA",
+				"THREE.BinaryLoader"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"ext",
+				"extend	$.extend()"
+			],
+			[
+				"ready",
+				"ready	$(document).ready"
+			],
+			[
+				"stl",
+				"style	Attr"
+			],
+			[
+				"ba",
+				"background:#fff"
+			],
+			[
+				"style",
+				"style	Attr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/base.js",
+			"settings":
+			{
+				"buffer_size": 807,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/test_base.html",
+			"settings":
+			{
+				"buffer_size": 203,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/test-base.js",
+			"settings":
+			{
+				"buffer_size": 73,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Documents/GitHub/closure-library/closure/goog/base.js",
+			"settings":
+			{
+				"buffer_size": 52307,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Documents/GitHub/notepad2_2.htm",
+			"settings":
+			{
+				"buffer_size": 523,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 270.0,
+		"selected_items":
+		[
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"mk",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"pcr",
+				"Package Control: Remove Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"package",
+				"Package Control: Enable Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"pla",
+				"Set Syntax: Plain Text"
+			]
+		],
+		"width": 576.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Documents/GitHub/closure-library/closure/css/inlay/g-ratio.css",
+		"/D/Documents/GitHub/closure-library/closure/css/inlay/g-fixed.css",
+		"/D/Documents/GitHub/closure-library/closure/css/inlay/g-base.css",
+		"/C/Users/Administrator/Desktop/ee/compiler.js",
+		"/C/Users/Administrator/Desktop/ee/b.css",
+		"/C/Users/Administrator/Desktop/ee/a.css",
+		"/C/Users/Administrator/Desktop/ee/all.css",
+		"/C/Users/Administrator/Desktop/b.css",
+		"/C/Users/Administrator/Desktop/a.css",
+		"/E/FE/fe.sublime-project",
+		"/D/Documents/GitHub/closure-library/closure/goog/css/dialog.css",
+		"/D/Documents/GitHub/closure-library/closure/goog/css/css3button.css",
+		"/D/Documents/GitHub/closure-library/closure/goog/css/button.css",
+		"/D/Documents/GitHub/closure-library/closure/goog/css/autocomplete.css",
+		"/D/Documents/GitHub/closure-library/closure/goog/css/checkbox.css",
+		"/D/Documents/GitHub/closure-library/closure/goog/css/common.css",
+		"/D/Documents/GitHub/closure-library/closure/goog/base_test.html",
+		"/D/Documents/GitHub/closure-library/closure/goog/base_test.js",
+		"/D/Documents/GitHub/wx/index.html",
+		"/D/Documents/GitHub/wx/src/widget.js",
+		"/D/Documents/GitHub/closure-library/closure/goog/a11y/aria/datatables.js",
+		"/D/Documents/GitHub/closure-library/closure/goog/a11y/aria/roles.js",
+		"/C/Users/Administrator/Desktop/notepad2.htm",
+		"/C/Users/Administrator/Desktop/notepad2.js",
+		"/D/Documents/GitHub/closure-library/closure/goog/deps.js",
+		"/E/FE/yezhu-zhuce/assets/js/community.js",
+		"/E/FE/yezhu-zhuce/index.html",
+		"/D/work/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
+		"/D/Documents/GitHub/underscore/underscore.js",
+		"/E/works/253/gzsearch.php",
+		"/C/Users/Administrator/Desktop/ubbhtml.js",
+		"/E/works/253/designer/assets/front/js/valid.js",
+		"/D/work/Sublime Text 3/Data/Packages/User/try.sublime-snippet",
+		"/D/work/Sublime Text 3/Packages/while.sublime-snippet",
+		"/D/work/Sublime Text 3/Data/Packages/Default/Preferences.sublime-settings",
+		"/D/work/Sublime Text 3/Packages/try.sublime-snippet",
+		"/D/work/Sublime Text 3/Data/Packages/User/JavaScript/while.sublime-snippet",
+		"/D/work/Sublime Text 3/Data/Packages/User/JavaScript/try.sublime-snippet",
+		"/D/work/Sublime Text 3/Data/Packages/User/JavaScript/if-___-else.sublime-snippet",
+		"/D/work/Sublime Text 3/Packages/JavaScript/catch.sublime-snippet",
+		"/D/Documents/GitHub/closure-library/closure/goog/cssom/cssom_test.html",
+		"/D/Documents/GitHub/closure-library/README",
+		"/E/FE/yezhu-zhuce/assets/js/yzzc-tx.js",
+		"/E/FE/yezhu-zhuce/communityContent.html",
+		"/E/FE/yezhu-zhuce/email-valid.html",
+		"/E/FE/yezhu-zhuce/community-list.php",
+		"/E/FE/yezhu-zhuce/avatar-upload.html",
+		"/E/works/253/sitestats/include.inc/stat.class.php",
+		"/E/FE/共享文档/9-26 项目需求文档/注册原型/注册原型/resources/scripts/jquery-1.4.2.min.js",
+		"/D/work/Sublime Text 3/Data/Packages/User/Refactor.sublime-settings",
+		"/D/work/Sublime Text 3/Data/Packages/JSHint Gutter/JSHint.sublime-settings",
+		"/D/work/Sublime Text 3/Data/Packages/JSHint Gutter/Default (Windows).sublime-keymap",
+		"/D/work/Sublime Text 3/Data/Installed Packages/README.md",
+		"/D/work/Sublime Text 3/Packages/JavaScript/Symbol List Sub 2.tmPreferences",
+		"/D/work/Sublime Text 3/Packages/JavaScript/Object-key-key-value.sublime-snippet",
+		"/D/work/Sublime Text 3/Packages/JavaScript/for-()-{}-(faster).sublime-snippet",
+		"/D/work/Sublime Text 3/Packages/JavaScript/for-()-{}.sublime-snippet",
+		"/D/work/Sublime Text 3/Packages/JavaScript/function-(fun).sublime-snippet",
+		"/D/work/Sublime Text 3/Packages/JavaScript/function.sublime-snippet",
+		"/D/work/Sublime Text 3/Packages/JavaScript/Get-Elements.sublime-snippet",
+		"/D/work/Sublime Text 3/Packages/JavaScript/if.sublime-snippet",
+		"/D/work/Sublime Text 3/Packages/JavaScript/if-___-else.sublime-snippet",
+		"/D/work/Sublime Text 3/Packages/JavaScript/JavaScript Indent.tmPreferences",
+		"/D/work/Sublime Text 3/Packages/JavaScript/JSON.tmLanguage",
+		"/D/work/Sublime Text 3/Packages/if.sublime-snippet",
+		"/D/work/Sublime Text 3/Data/Installed Packages/$_ajax.sublime-snippet",
+		"/D/work/Sublime Text 3/Data/Packages/User/MarkdownPreview.sublime-settings",
+		"/D/work/Sublime Text 3/Data/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/D/work/Sublime Text 3/Data/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/D/work/Sublime Text 3/Packages/新建文件夹/CSS.tmLanguage",
+		"/D/work/Sublime Text 3/Packages/CSS.tmLanguage",
+		"/D/work/Sublime Text 3/Packages/Completion Rules.tmPreferences",
+		"/D/work/Sublime Text 3/Packages/新建文件夹/Completion Rules.tmPreferences",
+		"/D/work/Sublime Text 3/Packages/新建文件夹/Comments.tmPreferences",
+		"/D/work/Sublime Text 3/Packages/新建文件夹/Symbol List.tmPreferences",
+		"/D/work/Sublime Text 3/Packages/CSS.sublime-package",
+		"/E/works/253/designer/assets/front/js/slide.js",
+		"/E/FE/yezhu-zhuce/tcy.html",
+		"/E/app/script/Drag/Drag.htm",
+		"/E/FE/newindex/assets/front/js/vendor/jquery.js",
+		"/E/app/script/Drag/SimpleDrag.htm",
+		"/E/works/253/css/tpbk-activity.css",
+		"/E/works/253/news.php",
+		"/E/FE/yezhu-zhuce/assets/js/select.js",
+		"/D/Documents/GitHub/prototype/src/prototype/lang/class.js",
+		"/D/Documents/GitHub/prototype/README.markdown",
+		"/C/Users/Administrator/Desktop/宣传.html",
+		"/E/works/253/designer/Public/js/ds.js",
+		"/C/Users/Administrator/Desktop/t(1).html",
+		"/C/Users/Administrator/Desktop/测试用户.htm"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"obj",
+			"iahu",
+			"chhome",
+			"\\",
+			"CHH",
+			"jquery",
+			"EventTarget",
+			"\\",
+			"reg-box",
+			"green",
+			"completion",
+			"2",
+			"f6f6f6",
+			"event",
+			"8px",
+			"产经新闻",
+			"TD",
+			"popwin",
+			"PopWin",
+			"popwin",
+			"6",
+			" async defer",
+			"start",
+			"margin-bottom:1em;line-height:1.5;",
+			"bottom:1em;",
+			"margin-left: 2em;",
+			"ccc",
+			"completion"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/base.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 807,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								122,
+								122
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/test_base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 203,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								172,
+								172
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/test-base.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 73,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28,
+								28
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "/D/Documents/GitHub/closure-library/closure/goog/base.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 52307,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								302,
+								302
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/Documents/GitHub/notepad2_2.htm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 523,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								197,
+								197
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.534591194969,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "wx.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\FE\\fe.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
