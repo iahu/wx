@@ -1,14 +1,16 @@
 @echo off
+@chcp 65001
+cls
 
 set /p name=module name:
 set /p directory=directory:(./%name% ?)
 
-::if exist %name% echo Â·¾¶ [./%name%]ÒÑ´æÔÚ£¬ÊÇ·ñÒª¸²¸Ç£¿ && pause
+::if exist %name% echo è·¯å¾„ [./%name%]å·²å­˜åœ¨ï¼Œæ˜¯å¦è¦è¦†ç›–ï¼Ÿ && pause
 
 md %name%
 cd %name%
 
-echo /* %name%.css */>%name%.css
+echo /* æ–‡ä»¶å %name%.css */>%name%.css
 
 echo ^<!doctype html^>>test_%name%.html
 echo ^<html lang="en"^>>>test_%name%.html
@@ -30,11 +32,11 @@ echo    ^</style^>>>test_%name%.html
 echo ^</head^>>>test_%name%.html
 echo ^<body^>>>test_%name%.html
 echo    ^<div id="about"^>>>test_%name%.html
-echo        ^<h2^>ËµÃ÷^</h2^>>>test_%name%.html
+echo        ^<h2^>è¯´æ˜^</h2^>>>test_%name%.html
 echo        ^<div class="about-des"^>>>test_%name%.html
 echo        ^</div^>>>test_%name%.html
 echo. >>test_%name%.html
-echo        html Æ¬¶Î£º>>test_%name%.html
+echo        html ç‰‡æ®µï¼š>>test_%name%.html
 echo        ^<pre class="code"^>>>test_%name%.html
 echo        ^</pre^>>>test_%name%.html
 echo    ^</div^>>>test_%name%.html
@@ -49,6 +51,6 @@ echo ^</body^>>>test_%name%.html
 echo ^</html^>>>test_%name%.html
 
 
-echo ´´½¨ %name% ³É¹¦!
+echo åˆ›å»º %name% æˆåŠŸ!
 timeout /t 3
 exit

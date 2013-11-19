@@ -1,15 +1,44 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>test button</title>
-    <link rel="stylesheet" href="button.css">
+   <meta charset="GBK">
+   <title>test button</title>
+   <link rel="stylesheet" href="button.css">
+   <style>
+    body {padding: 0;margin: 0;}
+    #about {position: absolute;left: 0;top: 0;width: 20em;padding: 0 12px;background-color: #ffe;height: 100%;border-right: 1px solid #eea;}
+    #about .about-des {margin-bottom: 50px;color: #37A4A8;}
+    #about h2, #demo h2 {color:#399;}
+    #demo {position: relative;margin-left: 24em;padding: 0 40px 0 12px;}
+    code {border: 1px solid #ccc;display: inline-block;*display: inline;*zoom: 1;padding: 0 4px;background-color: #fefefe;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;color: #555;}
+    pre.code {border: 1px solid #ccc;padding: 10px;background-color: #fff;overflow: hidden;_overflow: auto;}
+    pre.code:hover {overflow: auto;}
+   </style>
 </head>
 <body>
-    <button class="btn">button.btn</button>
-    <a href="#" class="btn" role="button">a.btn</a>
+   <div id="about">
+       <h2>说明</h2>
+       <div class="about-des">
+       <p>自定义的按钮样式。</p>
+       <p>只是个基类，可以去扩展它的颜色与大小等属性</p>
+       </div>
+ 
+       html 片段：
+       <pre class="code">
+&lt;button class="btn">button.btn&lt;/button&gt;
+&lt;a href="#" class="btn" role="button"&gt;a.btn&lt;/a&gt;
 
-    <button class="btn btn-disabled" role="button">button.btn-disabled</button>
-    <button disabled="disabled" class="btn">button:disabled</button>
+&lt;button class="btn btn-disabled" role="button"&gt;button.btn-disabled&lt;/button&gt;
+&lt;button disabled="disabled" class="btn"&gt;button:disabled&lt;/button&gt;
+       </pre>
+   </div>
+   <div id="demo">
+       <h2>DEMO</h2>
+        <button class="btn">button.btn</button>
+        <a href="#" class="btn" role="button">a.btn</a>
+
+        <button class="btn btn-disabled" role="button">button.btn-disabled</button>
+        <button disabled="disabled" class="btn">button:disabled</button>
+   </div>
 </body>
 </html>

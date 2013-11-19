@@ -1,22 +1,94 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>test popwin</title>
-    <link rel="stylesheet" href="popwin.css">
+   <meta charset="UTF-8">
+   <title>test popwin</title>
+   <link rel="stylesheet" href="popwin.css">
+   <style>
+   body {padding: 0;margin: 0;}
+   #about {position: absolute;left: 0;top: 0;width: 20em;padding: 0 12px;background-color: #ffe;height: 100%;border-right: 1px solid #eea;}
+   #about .about-des {margin-bottom: 50px;color: #37A4A8;}
+   #about h2, #demo h2 {color:#399;}
+   #demo {position: relative;margin-left: 24em;padding: 0 40px 0 12px;}
+   code {border: 1px solid #ccc;display: inline-block;*display: inline;*zoom: 1;padding: 0 4px;background-color: #fefefe;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;color: #555;}
+   pre.code {border: 1px solid #ccc;padding: 10px;background-color: #fff;overflow: hidden;_overflow: auto;}
+   pre.code:hover {overflow: auto;}
+   </style>
 </head>
 <body>
-    <div class="pop-win" role="alertdialog">
+   <div id="about">
+       <h2>说明</h2>
+       <div class="about-des">
+        <p>弹出框的样式，与 panel非常像，不过它有个最小宽度420px</p>
+        <p>注意，设置高度的时候应该设置<code>.pop-body</code>的，而不是直接设置<code>.pop-win</code></p>
+       </div>
+ 
+       html 片段：
+       <pre class="code">
+&lt;div class="pop-win" role="alertdialog"&gt;
+    &lt;div class="pop-header"&gt;
+        &lt;strong class="pop-title" aria-label="选择小区"&gt;李清照的辞&lt;/strong&gt;
+        &lt;span class="pop-closer closer"&gt;×&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="pop-body"&gt;
+        &lt;div class="pop-content"&gt;
+        content...
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+       </pre>
+   </div>
+ 
+ 
+   <div id="demo">
+       <h2>DEMO</h2>
+
+      <div class="pop-win" role="alertdialog">
         <div class="pop-header">
-            <strong class="pop-title" aria-label="选择小区">选择小区</strong>
-            <span class="pop-closer closer">×</span>
+          <strong class="pop-title" aria-label="选择小区">李清照的辞</strong>
+
+          <span class="pop-toolbar">
+              <span class="pop-tb pop-tb-mini" title="最小化" arial-label="最小化">&minus;</span>
+              <span class="pop-tb pop-tb-max" title="最大化" arial-label="最大化">□</span>
+              <span class="pop-tb pop-closer" title="关闭" arial-label="关闭">×</span>
+          </span>
         </div>
         <div class="pop-body">
-            body
+          <div class="pop-content">
+            <div style="padding: 10px 20px;text-align: center;">
+              <h4>一剪梅·红藕香残玉簟秋</h4>
+              红藕香残玉簟秋，轻解罗裳，独上兰舟。<br>
+              云中谁寄锦书来？雁字回时，月满西楼。<br>
+              花自飘零水自流，一种相思，两处闲愁。<br>
+              此情无计可消除，才下眉头，却上心头。<br>
+            </div>
+
+          </div>
         </div>
-        <div class="pop-footer">
-            footer
+      </div>
+
+      <div class="pop-win" role="alertdialog" style="width: 600px;top:300px;">
+        <div class="pop-header">
+          <strong class="pop-title" aria-label="选择小区">李清照的辞</strong>
+
+          <span class="pop-toolbar">
+              <span class="pop-tb pop-tb-mini" title="最小化" arial-label="最小化">&minus;</span>
+              <span class="pop-tb pop-closer" title="关闭" arial-label="关闭">×</span>
+          </span>
         </div>
-    </div>
+        <div class="pop-body">
+          <div class="pop-content">
+            <div style="padding: 10px 20px;text-align: center;">
+              <h4>一剪梅·红藕香残玉簟秋</h4>
+              红藕香残玉簟秋，轻解罗裳，独上兰舟。<br>
+              云中谁寄锦书来？雁字回时，月满西楼。<br>
+              花自飘零水自流，一种相思，两处闲愁。<br>
+              此情无计可消除，才下眉头，却上心头。<br>
+            </div>
+
+          </div>
+        </div>
+      </div>
+   </div>
 </body>
 </html>

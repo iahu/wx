@@ -1,8 +1,11 @@
+/* 文件名 popwin.css */
 .pop-win {
-    position: fixed;
-    _position: absolute;
+    position: absolute;
     background-color: #aaa;
-    border: 1px solid #ccc;
+    background-color: rgba(100,100,100,0.3);
+    border: 1px solid #D0D0D0;
+    min-width: 420px;
+    _width: 420px;
     padding: 3px;
     z-index: 999;
     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
@@ -13,31 +16,45 @@
     padding: 8px 12px;
     background: #f2f2f2;
     border-bottom: 1px solid #e3e3e3;
-    overflow: hidden;
-    *zoom: 1;
 }
 .pop-win .pop-title {
     display: block;
-    float: left;
-    color: #666;
-    font: 16px 宋体;
+    color: #555;
+    font: bold 16px 宋体;
+    margin-right: 1em;
 }
-.pop-win .pop-closer {
-    float: right;
-    cursor: pointer;
-    font: bold 14px sans-serif;
+.pop-win .pop-toolbar {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    font: normal normal normal 20px/1 arial, "宋体";
+    padding: 3px;
     color:#666;
 }
+
+.pop-win .pop-toolbar .pop-tb-max {
+    position: relative;
+    top: -3px;
+}
+
+.pop-win .pop-toolbar .pop-tb {
+    cursor: pointer;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-right: 3px;
+}
+
+.pop-win .pop-tb:hover {
+    color:#C60;
+}
+
 .pop-win .pop-body {
     color: #333;
-    padding: 6px 12px;
-    min-width: 240px;
-    min-height: 80px;
+    font-size: 100%;
     background-color: #fff;
 }
-.pop-win .pop-footer {
-    color: #666;
+.pop-win .pop-content {
+    position: relative;
     padding: 6px 12px;
-    background-color: #f2f2f2;
-    border-top: 1px solid #e3e3e3;
 }

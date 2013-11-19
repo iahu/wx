@@ -1,11 +1,9 @@
-.ax-tab {
-    width: 420px;
-}
-.ax-tab .ax-tab-hd {
+/* 文件名 tab.css */
+.ui-tab .ui-tab-hd {
     font-size: 14px;
     border-bottom: 1px solid #c8c8c8;
 }
-.ax-tab .ax-tab-list {
+.ui-tab .ui-tab-list {
     position: relative;
     top: 1px;
     margin: 0;
@@ -15,27 +13,27 @@
     list-style: none;
 }
 
-.ax-tab .ax-tab-hd li {
+.ui-tab .ui-tab-hd li {
     display: inline;
     float: left;
     margin: 0 3px;
     background-color: #f2f2f2;
 }
 
-.ax-tab .ax-tab-hd li.active {
+.ui-tab .ui-tab-hd .ui-tab-active {
     background-color: #fff;
 }
 
-.ax-tab .ax-tab-hd li a {
+.ui-tab .ui-tab-hd li a {
     color: #888;
 }
 
-.ax-tab .ax-tab-hd li.active a {
+.ui-tab .ui-tab-hd .ui-tab-active a {
     color: #000;
     border-bottom: 1px solid #fff;
 }
 
-.ax-tab .ax-tab-hd a {
+.ui-tab .ui-tab-hd a {
     text-decoration: none;
     display: inline-block;
     *display: inline;
@@ -49,19 +47,18 @@
     border-radius: 4px 4px 0 0;
 }
 
-.ax-tab .ax-tab-content {
+.ui-tab .ui-tab-content {
     overflow: hidden;
     *zoom: 1;
     border: 1px solid #c8c8c8;
     border-top: 0;
     padding: 12px;
-    height: 270px;
 }
 
-.ax-tab .ax-tab-panel {
+.ui-tab .ui-tab-panel {
     display: none;
 }
 
-.ax-tab .ax-tab-content .active {
+.ui-tab .ui-tab-content .ui-tab-active {
     display: block;
 }

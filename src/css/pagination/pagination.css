@@ -1,10 +1,11 @@
+/* pagination.css */
 .pagination {
-    font: normal 12px/1.2 arial, sans-serif, '宋体', '华文宋体';
+    font: normal 12px/1.2 Simusun, '宋体', '华文宋体', sans-serif;
 }
 .pagination ul {
     overflow: hidden;
     *zoom: 1;
-    float: right;
+    /*float: right;*/
 }
 .pagination li {
     list-style: none;
@@ -16,9 +17,14 @@
 .pagination .btn {
     /*基本样式*/
     color:#333;
-    background: #f2f2f2;
-    border: 1px solid #A0A0A0;
+    background: #F8F8F8;
+    border: 1px solid #999;
     text-decoration: none;
+
+    /*inline-block hack*/
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
 
     /*防止换行断开*/
     -ms-word-break: keep-all;
@@ -26,18 +32,30 @@
     white-space: nowrap;
 
     /*尺寸设置*/
-    margin: 0 3px;
+    margin: 0 2px;
     padding:1px 6px;
     -webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;
 }
 
-.pagination .btn {
-    float: left;
+.pagination li .btn.active {
+    color:#777;
+    border: 1px solid #eee;
+    background: #eee;
 }
-.pagination li a.active {
-    background: #e3e3e3;
-    color:#555;
-    box-shadow: inset 1px 1px 0 0 #ccc;
+.pagination li .btn:active,
+.pagination li .btn-go:active {
+    background: #D3D3D3;
+    color:#444;
+    border: 1px solid #777;
+    /*border-color: #AAA #AAA #BBB #BBB;*/
+}
+
+.pagination ul li .page-disabled,
+.pagination ul li .page-disabled:active {
+    background-color: #EBEBEB;
+    color:#CCC;
+    cursor: text;
+    border: 1px solid #ccc;
 }
 
 .pagination .page-go-num {

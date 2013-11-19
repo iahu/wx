@@ -54,3 +54,7 @@
     cursor: pointer;
     color: #666;
 }
+.panel .panel-toolbar .panel-tb-max {
+    position: relative;
+    top: -2px;
+}
