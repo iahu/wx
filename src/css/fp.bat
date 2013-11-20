@@ -53,4 +53,5 @@ echo ^</html^>>>test_%name%.html
 
 echo 创建 %name% 成功!
 timeout /t 3
+@chcp 963
 exit
