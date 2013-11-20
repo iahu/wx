@@ -50,8 +50,7 @@ echo    ^</div^>>>test_%name%.html
 echo ^</body^>>>test_%name%.html
 echo ^</html^>>>test_%name%.html
 
-
 echo 创建 %name% 成功!
 timeout /t 3
-@chcp 963
+@chcp 936
 exit

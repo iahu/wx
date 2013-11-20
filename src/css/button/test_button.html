@@ -19,26 +19,21 @@
    <div id="about">
        <h2>说明</h2>
        <div class="about-des">
-       <p>自定义的按钮样式。</p>
+       <p>自定义的按钮样式。<code>button</code> 上最好是用图片来替代CSS</p>
        <p>只是个基类，可以去扩展它的颜色与大小等属性</p>
        </div>
  
        html 片段：
        <pre class="code">
-&lt;button class="btn">button.btn&lt;/button&gt;
-&lt;a href="#" class="btn" role="button"&gt;a.btn&lt;/a&gt;
-
-&lt;button class="btn btn-disabled" role="button"&gt;button.btn-disabled&lt;/button&gt;
-&lt;button disabled="disabled" class="btn"&gt;button:disabled&lt;/button&gt;
+&lt;a href="#" class="ui-btn" role="button"&gt;a.ui-btn&lt;/a&gt;
        </pre>
    </div>
    <div id="demo">
        <h2>DEMO</h2>
-        <button class="btn">button.btn</button>
-        <a href="#" class="btn" role="button">a.btn</a>
-
-        <button class="btn btn-disabled" role="button">button.btn-disabled</button>
-        <button disabled="disabled" class="btn">button:disabled</button>
+        <button>button</button>
+        <a class="ui-btn">a.ui-btn</a>
+        <a href="#" class="ui-btn" role="button">a[href="#"].ui-btn</a>
+        <a class="ui-btn ui-btn-disabled" role="button">a.ui-btn-disabled</a>
    </div>
 </body>
 </html>
