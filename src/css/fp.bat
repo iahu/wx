@@ -7,8 +7,10 @@ set /p directory=directory:(./%name% ?)
 
 ::if exist %name% echo 路径 [./%name%]已存在，是否要覆盖？ && pause
 
-md %name%
-cd %name%
+if not %directory% do set /p directory=%name%
+
+md %directory%
+cd %directory%
 
 echo /* 文件名 %name%.css */>%name%.css
 
