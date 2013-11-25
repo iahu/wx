@@ -7,13 +7,13 @@
  * 在命名空间下增加语言原生功能
  */
 
-var chom = chom || {};
+var webX = webX || {};
 
 /**
  * 存储访问全局属性的一个引用
  * @type {Object}
  */
-chom.global = this;
+webX.global = this;
 
 
 /**
@@ -22,9 +22,9 @@ chom.global = this;
  * @param  {[*]} opt_object 扩展路径 对应的属性
  * @param  {[Object]} opt_toObject 可选的路径所属对象
  */
-chom.definNS = function (name, opt_object, opt_toObject) {
+webX.definNS = function (name, opt_object, opt_toObject) {
     var parts = name.split('.'),
-        cur = opt_toObject || chom.global;
+        cur = opt_toObject || webX.global;
 
     for (var part; parts.length && (part = parts.shift());) {
         if (!parts.length && opt_object !== undefined) {

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test valid2.js</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="valid2.js"></script>
+    <style>
+.input-box {padding: 5px;}
+
+.error-input {background: #fcc!important;border: 1px solid red!important;}
+.valid .grzl-table{ table-layout:fixed; word-break:break-all; word-wrap: break-word; }
+.x-tips {position: absolute;padding: 4px 6px;color:#333;white-space: nowrap;font-size: 12px;background-color: #fff;}
+.x-tips .corner {display: none;}
+.x-tips i {background: url(http://192.168.2.253/owner/assets/css/img/info.png) 0 0 no-repeat;display: inline-block;*display: inline;*zoom: 1; width: 16px;height: 16px;margin-right: 4px;}
+.x-tips span {position: relative;top: -4px;line-height: 16px;}
+.xtip-failed i,
+.xtip-warnning i {background: url(http://192.168.2.253/owner/assets/css/img/false.png) 0 0 no-repeat;}
+.xtip-success i {background: url(http://192.168.2.253/owner/assets/css/img/true.png) 0 0 no-repeat;}
+.create-tip {position: absolute;left: 215px;top: 180px;}
+.v-code img {margin-left: 4px;}
+.v-code .x-tips {margin-left:140px;}
+    </style>
+
+</head>
+<body>
+    <form action="./zcym-yxyz.html" id="reg-form">
+        <div class="input-box">
+            <label for="email">邮箱：</label><input type="email" name="email" id="email" verify-msg="请填入邮件如：example@example.com" verify-type="email">
+        </div>
+        <div class="input-box">
+            <label for="password">密码：</label><input type="password" name="password" id="password" maxlength="18" verify-msg="请填入6-18位的密码" verify-type="password">
+        </div>
+        <div class="input-box">
+            <label for="repassword">再次输入密码：</label><input type="password" name="repassword" id="repassword" verify-msg="请确认两次密码一致" verify-type="repassword">
+        </div>
+        <div class="input-box">
+            <label for="community">所在小区：</label><input type="text" name="community" id="community" verify-msg="请选择一个小区" verify-type="required">
+        </div>
+        <div class="input-box">
+            <label for="nickname">昵称：</label><input type="text" name="nickname" id="nickname" verify-msg="昵称仅支持中英文，数字 “_” “-”" verify-type="required" verify-length="4,18" maxlength="18">
+        </div>
+
+        <input type="submit" value="提交" id="submit">
+    </form>
+
+    <script>
+    var form = $('#reg-form');
+
+
+form.delegate('[verify-type]', 'change', function(event) {
+    var pass = $('#password'),
+    repass = $('#repassword'),
+    required = $('[verify-type="required"]'),
+    
+    type = $(this).attr('verify-type'),
+    types = {
+        email: function () {
+            this.validate = /^.+@\w+\.\w+$/.test(this.value);
+        },
+
+        password: function () {
+            var pattern = /^\w{6,20}$/;
+            if (repass.validate !== 'undefined') {
+                repass.trigger('validate');
+            }
+            this.validate = pattern.test(this.value);
+        },
+
+        repassword: function () {
+            pass = pass instanceof jQuery? pass[0] : pass;
+
+            if (!pass.validate) {
+                this.validate = false;
+            } else {
+                this.validate = (this.value == pass.value);
+            }
+        },
+
+        required: function () {
+            var l = $(this).attr('verify-length').split(','),
+                v = $(this).val(),
+                c;
+            if (this.nodeName.toLowerCase() == 'select') {
+                c = $(this).val();
+            } else {
+                if (l &&  l.length > 1 ) {
+                    if ( v.length >= +l[0] && v.length < +l[1] ) {
+                        c = true;
+                    } else {
+                        c = false;
+                    }
+                } else {
+                    c = this.value.length;
+                }
+            }
+            this.validate = c;
+        }
+    };
+
+
+    if ( types.hasOwnProperty(type) ) {
+        types[type].apply(this);
+    }
+});
+
+
+
+
+$(document).ready(function() {
+    Yzzc.valid( $('#reg-form'), $('#submit') );
+});
+
+    </script>
+</body>
+</html>

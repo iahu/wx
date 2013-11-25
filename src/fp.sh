@@ -11,7 +11,7 @@ echo $directory
 mkdir $directory
 cd $directory
 
-echo /* 文件名 $name.css */>$name.css
+echo "/* 文件名 $name.css */">$name.css
 
 echo "<!doctype html>">test_$name.html
 echo "<html lang="en">">>test_$name.html
