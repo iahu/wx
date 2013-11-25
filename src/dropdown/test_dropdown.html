@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test dropdown</title>
+    <link rel="stylesheet" href="dropdown.css">
+    <style>
+    body {padding: 0;margin: 0;}
+    #about {position: absolute;left: 0;top: 0;width: 20em;padding: 0 12px;background-color: #ffe;height: 100%;border-right: 1px solid #eea;}
+    #about .about-des {margin-bottom: 50px;color: #37A4A8;}
+    #about h2, #demo h2 {color:#399;}
+    #demo {position: relative;margin-left: 24em;padding: 0 40px 0 12px;}
+    code {border: 1px solid #ccc;display: inline-block;*display: inline;*zoom: 1;padding: 0 4px;background-color: #fefefe;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;color: #555;}
+    pre.code {border: 1px solid #ccc;padding: 10px;background-color: #fff;overflow: hidden;_overflow: auto;}
+    pre.code:hover {overflow: auto;}
+    </style>
+</head>
+
+<body>
+    <div id="about">
+        <h2>说明</h2>
+        <div class="about-des">
+        <p>下拉列表样式，可以替换<code>select</code></p>
+        <p>有二个可以配置的 class ：</p>
+        <ul>
+          <li>.ui=dropdown-active：显示与隐藏</li>
+          <li>.ui=dropdown-border：下拉列表有没有分割线</li>
+        </ul>
+        </div>
+
+        html 片段：
+        <pre class="code">
+&lt;div class="ui-dropdown ui-dropdown-border"&gt;
+  &lt;span class="ui-dropdown-show"&gt;
+    &lt;span&gt;要显示的内容&lt;/span&gt;
+    &lt;em&gt;&#x25bc;&lt;/em&gt;
+  &lt;/span&gt;
+
+  &lt;div class="ui-dropdown-list-box"&gt;
+    &lt;ul class="ui-dropdown-list"&gt;
+      &lt;li&gt;
+        &lt;em&gt;&#x266a;&lt;/em&gt;
+        &lt;span&gt;选择一&lt;/span&gt;
+        &lt;input type="radio" name="test_name_value" value="1"&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;em&gt;&#x266a;&lt;/em&gt;
+        &lt;span&gt;选择二&lt;/span&gt;
+        &lt;input type="radio" name="test_name_value" value="2"&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+    </div>
+
+
+    <div id="demo">
+        <h2>DEMO</h2>
+        
+        <div style="float: left;margin: 12px 30px;">
+          <h4>不显示下拉列表</h4>
+
+          <div class="ui-dropdown ui-dropdown-border">
+            <span class="ui-dropdown-show">
+              <span>要显示的内容</span>
+              <em>&#x25bc;</em>
+            </span>
+            <div class="ui-dropdown-list-box">
+              <ul class="ui-dropdown-list">
+                <li>
+                  <em>&#x266a;</em>
+                  <span>选择一</span>
+                  <input type="radio" name="test_name_value" value="1">
+                </li>
+                <li>
+                  <em>&#x266a;</em>
+                  <span>选择二</span>
+                  <input type="radio" name="test_name_value" value="2">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div style="float: left;margin: 12px 30px;">
+          <h4>显示下拉列表</h4>
+
+          <div class="ui-dropdown ui-dropdown-active">
+            <span class="ui-dropdown-show">
+              <span>要显示的内容</span>
+              <em>&#x25bc;</em>
+            </span>
+            <div class="ui-dropdown-list-box">
+              <ul class="ui-dropdown-list">
+                <li>
+                  <em>&#x266a;</em>
+                  <span>选择一</span>
+                  <input type="radio" name="test_name_value" value="1">
+                </li>
+                <li>
+                  <em>&#x266a;</em>
+                  <span>选择二</span>
+                  <input type="radio" name="test_name_value" value="2">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div style="float: left;margin: 12px 30px;">
+          <h4>有分割线的下拉列表</h4>
+
+          <div class="ui-dropdown ui-dropdown-border ui-dropdown-active">
+            <span class="ui-dropdown-show">
+              <span>要显示的内容</span>
+              <em>&#x25bc;</em>
+            </span>
+            <div class="ui-dropdown-list-box">
+              <ul class="ui-dropdown-list">
+                <li>
+                  <em>&#x266a;</em>
+                  <span>选择一</span>
+                  <input type="radio" name="test_name_value" value="1">
+                </li>
+                <li>
+                  <em>&#x266a;</em>
+                  <span>选择二</span>
+                  <input type="radio" name="test_name_value" value="2">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

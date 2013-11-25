@@ -1,0 +1,64 @@
+/* 文件名 dropdown.css */
+.ui-dropdown {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.ui-dropdown .ui-dropdown-show {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    background-color: #f2f2f2;
+    border: 1px solid  #ccc;
+    padding: 5px 9px;
+    cursor: pointer;
+}
+
+.ui-dropdown .ui-dropdown-show em {
+    margin-left: 6px;
+    color: #aaa;
+    font: 12px arial sans-serif;
+}
+
+.ui-dropdown .ui-dropdown-list-box {
+    display: none;
+    height: 0;
+    overflow: hidden;
+}
+.ui-dropdown-active .ui-dropdown-list-box {
+    display: block;
+    height: auto;
+}
+
+.ui-dropdown .ui-dropdown-list {
+    position: absolute;
+    background-color: #fff;
+    padding: 0;
+    margin: 3px 0 0 0;
+    border: 1px solid #c8c8c8;
+    overflow: hidden;
+}
+.ui-dropdown-border .ui-dropdown-list {
+    border-bottom: 0;
+}
+
+.ui-dropdown .ui-dropdown-list li {
+    list-style-type: none;
+    margin: 0;
+    padding: 7px 9px;
+    cursor: pointer;
+}
+.ui-dropdown .ui-dropdown-list li:hover,
+.ui-dropdown .ui-dropdown-list li:active {
+    background-color: #f2f2f2;
+}
+
+.ui-dropdown-border .ui-dropdown-list li {
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.ui-dropdown .ui-dropdown-list li input {
+    display: none;
+}

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test table</title>
+    <link rel="stylesheet" href="table.css">
+    <style>
+    body {padding: 0;margin: 0;}
+    #about {position: absolute;left: 0;top: 0;width: 20em;padding: 0 12px;background-color: #ffe;height: 100%;border-right: 1px solid #eea;}
+    #about .about-des {margin-bottom: 50px;color: #37A4A8;}
+    #about h2, #demo h2 {color:#399;}
+    #demo {position: relative;margin-left: 24em;padding: 0 40px 0 12px;}
+    code {border: 1px solid #ccc;display: inline-block;*display: inline;*zoom: 1;padding: 0 4px;background-color: #fefefe;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;color: #555;}
+    pre.code {border: 1px solid #ccc;padding: 10px;background-color: #fff;overflow: hidden;_overflow: auto;}
+    pre.code:hover {overflow: auto;}
+    </style>
+</head>
+
+<body>
+    <div id="about">
+        <h2>说明</h2>
+        <div class="about-des">
+        <code>.ui-table</code>提供一两个常用表格的样式
+        </div>
+
+        html 片段：
+        <pre class="code">
+&lt;table class="ui-table ui-table-noborder"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;name&lt;/th&gt;
+        &lt;th&gt;age&lt;/th&gt;
+        &lt;th&gt;job&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;大宝&lt;/td&gt;
+        &lt;td&gt;53&lt;/td&gt;
+        &lt;td&gt;CEO&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;二宝&lt;/td&gt;
+        &lt;td&gt;50&lt;/td&gt;
+        &lt;td&gt;UFO&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;三宝&lt;/td&gt;
+        &lt;td&gt;47&lt;/td&gt;
+        &lt;td&gt;CTO&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+        </pre>
+    </div>
+
+
+    <div id="demo">
+        <h2>DEMO</h2>
+
+        <h4>有边框</h4>
+        <table class="ui-table ui-table-noborder">
+            <tr>
+                <th>#</th>
+                <th>name</th>
+                <th>age</th>
+                <th>job</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>大宝</td>
+                <td>53</td>
+                <td>CEO</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>二宝</td>
+                <td>50</td>
+                <td>UFO</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>三宝</td>
+                <td>47</td>
+                <td>CTO</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>四宝</td>
+                <td>42</td>
+                <td>CTO</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <h4>没有边框</h4>
+        <table class="ui-table ui-table-border">
+            <tr>
+                <th>#</th>
+                <th>name</th>
+                <th>age</th>
+                <th>job</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>大宝</td>
+                <td>53</td>
+                <td>CEO</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>二宝</td>
+                <td>50</td>
+                <td>UFO</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>三宝</td>
+                <td>47</td>
+                <td>CTO</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>四宝</td>
+                <td>42</td>
+                <td>CTO</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

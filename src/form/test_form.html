@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test form</title>
+  <link rel="stylesheet" href="form.css">
+  <style>
+    body {padding: 0;margin: 0;}
+    #about {position: absolute;left: 0;top: 0;width: 20em;padding: 0 12px;background-color: #ffe;height: 100%;border-right: 1px solid #eea;}
+    #about .about-des {margin-bottom: 50px;color: #37A4A8;}
+    #about h2, #demo h2 {color:#399;}
+    #demo {position: relative;margin-left: 24em;padding: 0 40px 0 12px;}
+    code {border: 1px solid #ccc;display: inline-block;*display: inline;*zoom: 1;padding: 0 4px;background-color: #fefefe;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;color: #555;}
+    pre.code {border: 1px solid #ccc;padding: 10px;background-color: #fff;overflow: hidden;_overflow: auto;}
+    pre.code:hover {overflow: auto;}
+  </style>
+</head>
+<body>
+  <div id="about">
+    <h2>说明</h2>
+    <div class="about-des">
+      <p>表单的样式</p>
+    </div>
+
+    html 片段：
+    <pre class="code">
+    </pre>
+  </div>
+  
+
+  <div id="demo">
+    <h2>DEMO</h2>
+
+
+    <form class="ui-form">
+      <fieldset>
+        <legend>表单名</legend>
+        <div class="ui-form-item">
+          <label for="text">
+            <span class="ui-form-required">*</span>用户名：
+          </label>
+          <input type="text" name="text" id="text" class="ui-form-text">
+        </div>
+
+        <div class="ui-form-item">
+          <label for="select1">地区：</label>
+          <select name="select1" id="select1" class="ui-form-select">
+            <option value="1">001</option>
+            <option value="2">002</option>
+          </select>
+        </div>
+
+        <div class="ui-form-item">
+          <label for="r1">性别：</label>
+          <input type="radio" name="radio" value="r1" id="r1">男
+          <input type="radio" name="radio" value="r2" id="r2">女
+          <input type="radio" name="radio" value="r3" id="r3">其它
+        </div>
+
+        <div class="ui-form-item">
+          <label for="c1">性取向：</label>
+          <input type="checkbox" name="checkbox" value="c1" id="c1">男
+          <input type="checkbox" name="checkbox" value="c2" id="c2">女
+          <input type="checkbox" name="checkbox" value="c3" id="c3">其它
+        </div>
+
+        <div class="ui-form-item">
+          <label for="des">个人说明：</label>
+          <textarea name="des" id="des" class="ui-form-textarea"></textarea>
+        </div>
+
+        <div class="ui-form-item">
+          <input type="submit" value="提交">
+          <input type="reset" value="重置">
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>

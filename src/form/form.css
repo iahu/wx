@@ -1,0 +1,58 @@
+/* 文件名 form.css */
+.ui-form {
+    position: relative;
+    *zoom: 1;
+}
+
+.ui-form-item {
+    position: relative;
+    padding: 6px 0 6px 160px;
+    *zoom: 1;
+}
+.ui-form-item:before {
+    clear:both;
+    content:'.';
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+
+.ui-form-item label {
+    float: left;
+    width: 160px;
+    margin-left: -160px;
+    text-align: right;
+}
+
+.ui-form-required {
+    color: #f00;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.ui-form-item .ui-form-text {
+    margin: 0;
+    padding: 3px 5px;
+    vertical-align: middle;
+}
+.ui-form-item .ui-form-textarea:hover,
+.ui-form-item .ui-form-textarea:focus,
+.ui-form-item .ui-form-text:hover,
+.ui-form-item .ui-form-text:focus {
+    -webkit-box-shadow: 0 0 3px #39f;
+    -moz-box-shadow: 0 0 3px #39f;
+    box-shadow: 0 0 3px #39f;
+}
+
+.ui-form-item button,
+.ui-form-item select {
+    vertical-align: middle;
+}
+
+.ui-form-text,
+.ui-form-textarea {
+    border: 1px solid #c8c8c8;
+}
+.ui-form-textarea {
+    overflow: auto;
+}

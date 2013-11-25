@@ -1,0 +1,65 @@
+/* 文件名 tab.css */
+.ui-tab {
+    position: relative;
+}
+
+.ui-tab .ui-tab-hd {
+    font-size: 14px;
+    border-bottom: 1px solid #c8c8c8;
+}
+.ui-tab .ui-tab-list {
+    position: relative;
+    top: 1px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    *zoom: 1;
+    list-style: none;
+}
+.ui-tab .ui-tab-hd li {
+    display: inline;
+    float: left;
+    margin: 0 3px;
+    background-color: #f2f2f2;
+}
+.ui-tab .ui-tab-hd li a {
+    color: #888;
+}
+.ui-tab .ui-tab-hd .ui-tab-active {
+    background-color: #fff;
+}
+.ui-tab .ui-tab-hd a {
+    text-decoration: none;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    float: left;
+    padding: 3px 12px;
+    color: #666;
+    border: 1px solid #c8c8c8;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+.ui-tab .ui-tab-hd .ui-tab-active a {
+    color: #000;
+    border-bottom: 1px solid #fff;
+}
+
+
+.ui-tab .ui-tab-content {
+    overflow: hidden;
+    *zoom: 1;
+    border: 1px solid #c8c8c8;
+    border-top: 0;
+    padding: 12px;
+    background-color: #fff;
+}
+
+.ui-tab .ui-tab-panel {
+    display: none;
+}
+
+.ui-tab .ui-tab-content .ui-tab-active {
+    display: block;
+}

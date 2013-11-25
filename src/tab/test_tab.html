@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>test tab</title>
+   <link rel="stylesheet" href="tab.css">
+   <style>
+   body {padding: 0;margin: 0;}
+   #about {position: absolute;left: 0;top: 0;width: 20em;padding: 0 12px;background-color: #ffe;height: 100%;border-right: 1px solid #eea;}
+   #about .about-des {margin-bottom: 50px;color: #37A4A8;}
+   #about h2, #demo h2 {color:#399;}
+   #demo {position: relative;margin-left: 24em;padding: 0 40px 0 12px;}
+   code {border: 1px solid #ccc;display: inline-block;*display: inline;*zoom: 1;padding: 0 4px;background-color: #fefefe;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;color: #555;}
+   pre.code {border: 1px solid #ccc;padding: 10px;background-color: #fff;overflow: hidden;_overflow: auto;}
+   pre.code:hover {overflow: auto;}
+   </style>
+</head>
+<body>
+   <div id="about">
+       <h2>说明</h2>
+       <div class="about-des">
+         <p>tab切换样式</p>
+         <p><code>.ui-tab-list > li</code> 应与 <code>.ui-tab-panel</code> 对应</p>
+       </div>
+ 
+       html 片段：
+       <pre class="code">
+&lt;div class="ui-tab"&gt;
+    &lt;div class="ui-tab-hd"&gt;
+        &lt;ul class="ui-tab-list" role="tablist"&gt;
+            &lt;li class="ui-tab-active" role="tab"&gt;&lt;a href="axtab1.html"&gt;标签1&lt;/a&gt;&lt;/li&gt;
+            &lt;li role="tab"&gt;&lt;a href="axtab2.html"&gt;标签2&lt;/a&gt;&lt;/li&gt;
+            &lt;li role="tab"&gt;&lt;a href="axtab3.html"&gt;标签3&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class="ui-tab-content" role="group"&gt;
+        &lt;div class="ui-tab-panel ui-tab-active" id="ui-tab-panel1" role="tab-panel" aria-hidden="false"&gt;
+        &lt;/div&gt;
+        &lt;div class="ui-tab-panel" id="ui-tab-panel2" role="tab-panel" aria-hidden="true"&gt;
+        &lt;/div&gt;
+        &lt;div class="ui-tab-panel" id="ui-tab-panel3" role="tab-panel" aria-hidden="true"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+       </pre>
+   </div>
+ 
+ 
+   <div id="demo">
+       <h2>DEMO</h2>
+
+    <div class="ui-tab" style="width:500px">
+        <div class="ui-tab-hd">
+            <ul class="ui-tab-list" role="tablist">
+                <li class="ui-tab-active" role="tab"><a href="axtab1.html">标签1</a></li>
+                <li role="tab"><a href="axtab2.html">标签2</a></li>
+                <li role="tab"><a href="axtab3.html">标签3</a></li>
+            </ul>
+        </div>
+        <div class="ui-tab-content" role="group">
+            <div class="ui-tab-panel ui-tab-active" id="ui-tab-panel1" role="tab-panel" aria-hidden="false">
+              <p>2Us+Y5dJ23Ysc/f{tMp1>LiLd%|q\BiW</p>
+              <p>2Us+Y5dJ23Ysc/f{tMp1>LiLd%|q\BiW</p>
+              <p>2Us+Y5dJ23Ysc/f{tMp1>LiLd%|q\BiW</p>
+              <p>2Us+Y5dJ23Ysc/f{tMp1>LiLd%|q\BiW</p>
+              <p>2Us+Y5dJ23Ysc/f{tMp1>LiLd%|q\BiW</p>
+              <p>2Us+Y5dJ23Ysc/f{tMp1>LiLd%|q\BiW</p>
+            </div>
+            <div class="ui-tab-panel" id="ui-tab-panel2" role="tab-panel" aria-hidden="true">
+            </div>
+            <div class="ui-tab-panel" id="ui-tab-panel3" role="tab-panel" aria-hidden="true">
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
